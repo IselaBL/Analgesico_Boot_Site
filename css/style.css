@@ -1,10 +1,89 @@
+/* ********** Custom Properties ********** */
+:root {
+  --first-color: rgb(43, 43, 43);
+  --first-alpha-color: rgba(43, 43, 43, 0.60);
+  --second-color: rgb(232, 188, 21);
+  --second-alpha-color: rgba(232, 188, 21, 0.75);
+  --third-color: rgb(247, 247, 247);
+  --third-alpha-color: rgba(247, 247, 247, 0.75);
+  --link-color: rgb(80, 158, 227);
+  --bg-color: rgb(245, 245, 245);
+  --bg-alpha-color: rgba(245, 245, 245, 0.75);
+  --navbar-height: 48px;
+  --font-family: "Maven+Pro", sans-serif;
+}
+/* ********** Reset Styles ********** */
+body {
+  font-family: var(--font-family);
+  font-color: var(--second-color);
+}
+/* ********** Bootstrap Styles ********** */
 .navbar-brand img {
   width: auto;
-  height: 3.5rem;
+  height: var(--navbar-height);
+  margin-left: -1em;
 }
+.nav-link {
+  color: var(--first-alpha-color) !important;
+  transition: all 0.15s ease-out;
+  font-weight: bold;
+}
+.nav-link:hover {
+  padding-left: 0.25rem;
+  color: var(--first-color) !important;
+}
+
+.dropdown-item {
+  color: var(--first-alpha-color);
+  font-weight: bold;
+  transition: all 0.15s ease-ease;
+}
+
+.dropdown-item:hover {
+  color: var(--third-color);
+}
+
+.intro-header{
+	background-color: var(--second-color);
+}
+
+/* ********** My Styles ********** */
+.bg-first-color {
+  background-color: var(--first-color);
+}
+
+/* ********** MediaQueries ********** */
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+.footer-belmora-logo {
+	text-align: left;
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+	.footer-belmora-logo {
+		text-align: center;
+	}
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .nav-link:hover {
+    background-color: transparent;
+     }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}
+
+
 .font-italic{
-  font-size:24px;
-  font-family:Source Sans Pro;
-  font-weight:700;
-  padding-top:42px;
-  }
+    font-size:24px;
+    font-family:Roboto;
+    font-weight:700;
+    padding-top:42px;
+    margin-bottom: -.05em;
+    color: var(--first-color);
+}
+
