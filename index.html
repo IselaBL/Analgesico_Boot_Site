@@ -1,60 +1,77 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@500;900&family=Roboto:ital,wght@1,900&display=swap" rel="stylesheet">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-
     <title>Sedalmex</title>
+    <meta name="description"
+    content="SEDALMEX es un medicamento de venta libre para el rápido alivio del dolor de cabeza.">
     <link rel="stylesheet"href="css/style.css"> 
+    <link rel="icon" href="img/favicon.png">
   </head>
 
   <body>
-  <div class="container">
-  <div class="row">
-      <article class="col-12 col-sm-12 col-md-6 col-lg-8 col-xl-8">
-      <p class="font-italic"><b>PARA ALIVIAR EL DOLOR DE CABEZA</b></p>
-      </article>
-  </div>
-  <nav class="navbar navbar-expand-lg navbar-light bg-warning">
-  <a class="navbar-brand" href="#"> 
-  <img src="img/LogoSedalmex.svg">
-  </a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-    <div class="navbar-nav">
-      <a class="nav-link active" href="#">Inicio <span class="sr-only">(current)</span></a>
-      <a class="nav-link" href="#">Ingredientes</a>
-      <a class="nav-link" href="#">Dosis</a>
-      <a class="nav-link" href="#">Advertencias</a>
-      <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Contacto</a>
-    </div>
-  </div>
-  </nav>
-
-<main>
-  <h1>Contenido landing</h1>
-</main>
-<footer>
-  <section class="border text-light bg-dark">
+  <div class="intro">
     <div class="container">
-     <section class="row">
-      <article class="col-12 col-sm-12 col-md-6 col-lg-8 col-xl-8 border">
+      <div class="row">
+        <article class="col-12 col-sm-12 col-md-12 col-lg-8 col-xl-8">
+        <p class="font-italic"><b>PARA ALIVIAR EL DOLOR DE CABEZA</b></p>
+        </article>
+      </div>
+    </div>
+    <div class="intro-header">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+         <a class="navbar-brand" href="#"> 
+         <img src="img/LogoSedalmex.svg">
+         </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav ml-lg-auto">
+        <a class="nav-link active" href="#">Inicio <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="#">Ingredientes</a>
+        <a class="nav-link" href="#">Dosis</a>
+        <a class="nav-link" href="#">Advertencias</a>
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Contacto</a>
+        </div>
+        </div>
+        </nav>
+      </div>
+    </div>  
+  </div>
+
+
+ <main class="container flex-grow-1">
+    <h1>Contenido de landing</h1>
+ </main>
+
+
+<footer class="text-white bg-first-color">
+    <div class="container">
+      <section class="row pt-5 py-5 align-items-top">
+      <article class="col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8 pr-5 pt-3">
       <img src="img/LogoSedalmexFooter.svg">
-        <p> <b>2019 Sedalmex.</b> Todos los derechos reservados.  <b>Sedalmex</b> no proveé recomendaciones medicas, diagnóstico o tratamiento.</p>
-        <p><a href="#" class="text-warning stretched-link">Claúsulas</a> / <a href="#" class="text-warning stretched-link">Políticas de privacidad</a></p>
+        <p><b>2019 Sedalmex.</b> Todos los derechos reservados.<b> Sedalmex</b> no proveé recomendaciones medicas, diagnóstico o tratamiento.</p>
+        <p><a target="_blank" href="#" class="text-white"><b>Claúsulas</b></a> / 
+        <a target="_blank" href="#" class="text-white"><b>Políticas de privacidad</b></a></p>
       </article>
-      <article class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 border">
-        <img src="img/Logo_belmora.png">
-        <p>Sedalmex es un producto de Belmora LLC.</p>
+      <article class="footer-belmora-logo col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 p-3">
+          <img class="belmora-logo" src="img/Logo_belmora.png">
+        <p class=""><b>Sedalmex</b> es un producto de Belmora LLC.</p>
       </article>
   </section>
+    </div>
   </footer>
+
+
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
