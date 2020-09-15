@@ -16,10 +16,11 @@
   </head>
 
   <body>
-  <div class="intro">
+  <!-- Sección presentación -->
+  <section id="presentation">
     <div class="container">
       <div class="row">
-        <article class="col-12 col-sm-12 col-md-12 col-lg-8 col-xl-8">
+        <article class="col-12 col-sm-12 col-md-12 col-lg-8 col-xl-8 mt">
         <p class="font-italic"><b>PARA ALIVIAR EL DOLOR DE CABEZA</b></p>
         </article>
       </div>
@@ -27,56 +28,218 @@
     <div class="intro-header">
       <div class="container">
         <nav class="navbar navbar-expand-lg navbar-light">
-         <a class="navbar-brand" href="#"> 
+         <a class="navbar-brand" href="index.html"> 
          <img src="img/LogoSedalmex.svg">
          </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav ml-lg-auto">
-        <a class="nav-link active" href="#">Inicio <span class="sr-only">(current)</span></a>
-        <a class="nav-link" href="#">Ingredientes</a>
-        <a class="nav-link" href="#">Dosis</a>
-        <a class="nav-link" href="#">Advertencias</a>
-        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Contacto</a>
+        <div class="navbar-nav ml-lg-auto px-5 px-sm-0">
+        <a class="nav-link active" href="index.html#presentation">Inicio <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="index.html#ingredients">Ingredientes</a>
+        <a class="nav-link" href="index.html#dosis">Dosis</a>
+        <a class="nav-link" href="index.html#advertencias">Advertencias</a>
+        <a class="nav-link" href="index.html#contacto">Contacto</a>
         </div>
         </div>
         </nav>
       </div>
-    </div>  
-  </div>
-
-
- <main class="container flex-grow-1">
-    <h1>Contenido de landing</h1>
- </main>
-
-
-<footer class="text-white bg-first-color">
+    </div>
+    <div class="flex-grow-1">
+     <div class="container">
+      <article class="col-12 col-lg-5 pl-0 pt-1">
+        <h5 class="subtitle"><b>Acetaminofeno y analgésico de cafeína</b></h5>
+      </article>
+     </div> 
+    <article class="container">
+      <div class="row">
+        <article class="col-12 col-lg-5 order-xs-1 order-sm-1 order-lg-0 my-5 lg-pr-5">
+          <p class="mt-3"><b>SEDALMEX</b> es un medicamento de venta libre para el rápido alivio rápido del dolor de cabeza.</p>
+          <p><b>SEDALMEX</b> contiene <b>acetaminofeno y analgésico de cafeína, NO contiene aspirina.</b> El acetaminofeno elimina el dolor de cabeza al evitar que tu cuerpo produzca ciertas sustancias. La cafeína ayuda a potenciar los efectos del acetaminofeno.</p>
+          <p class="mb-5">El acetaminofeno calma el dolor y reduce la fiebre. La cafeína en este producto se usa para aumentar los efectos analgésicos del acetaminofeno.</p>
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-lg bg-dark text-white" data-toggle="modal" data-target="#exampleModal">Muestra Gratis
+          </button>
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header bg-second-color">
+              <h6 class="modal-title" id="exampleModalLabel"><b>Obtén una muestra gratis Sedalmex</b></h6>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+              </button>
+              </div>
+            <div class="modal-body">
+              <p>¿Quieres recibir una muestra gratis de <b>Sedalmex</b>?</p>
+               <img class="img-fluid" src="img/muestra.png" alt="Sedalmex">
+               <p>Lo único que tienes que hacer es escribir <b> "Quiero una muestra gratis"</b> en el mensaje del formulario de <b>Contacto</b> y nos pondremos en contacto para enviártela.</p>
+            </div>
+              <div class="modal-footer bg-third-color">
+                <button type="button" class="btn btn-lg bg-dark text-white" data-dismiss="modal">Close</button>
+              </div>
+          </div>
+          </div>
+          </div>
+          <!-- Modal -->
+        </article>
+        <article class="col-12 col-lg-7">
+          <img class="img-fluid" src="img/producto.png" alt="Sedalmex">
+        </article>
+      </div>
+    </article>
+  </section>
+  <!-- Sección ingredientes -->
+  <section id="ingredients">
+    <article id="box-ingredients" class="container m-sm-0 m-md-auto m-lg-auto">
+      <div class="row">
+        <div class="col-md-12 col-lg-6 mt-5 px-lg-0 mx-sm-0 px-sm-4 px-md-auto px-lg-2">
+         <img src="img/logo-ingredients.svg">
+         <p class="lead">es un analgésico para aliviar el dolor y las molestias ocasionadas por dolor de cabeza  y migraña.</p>
+         <div class="row bg-third-color ml-5 my-lg-5">
+           <div class="ingredients-list col-lg-11 my-5">
+           <h5><b>Ingredients</b></h5>
+           <p>Cada cápsula de SEDALMEX contiene los siguientes ingredientes activos:</p>
+           <ul>
+             <li>Acetaminofén 500 mg</li>
+             <li>Cafeína 65 mg</li>
+           </ul>
+           <h6><b>Ingredientes Inactivos:</b></h6>
+           <p>Almidón de maíz, FD&C azul # 1, FD&C rojo # 40, gelatina, hidroxipropilcelulosa, hipromelosa, estearato de magnesio, celulosa microcristalina, polietilenglicol, povidona, propilenglicol, esmalte de goma laca, simeticona, dióxido de silicio, almidón glicolato de sodio, ácido esteárico, titanio dióxido.</p>
+           </div>
+         </div>
+        </div>
+        <div class="col-md-7 col-lg-6 col-sm-12 col-xs-12 px-0 mx-0">
+         <img src="img/pain-ingredients.jpg">
+        </div>
+      </div>
+    </article>
+  </section>
+  <!-- Sección dosis recomendada -->
+  <section id="dosis">
+    <article class="container">
+      <div class="row">
+        <div class="caja col-sm-2 col-md-12 col-lg-1">
+          <img id="paquete" src="img/package-.png">
+        </div> 
+        <div class="row bg-dosis-recomendada m-5 mx-sm-0">
+          <div class="offset-md-4 col-xs-10 col-md-8 col-lg-8 p-5">
+            <h5 id="text-dosis" class="mt-0"> <img src="img/icon-clock.svg"> <b>Dosis recomendada</b></h5>
+            <p>Tome este medicamento junto con un vaso completo de agua (8 onzas o 240 ml) a no ser que su médico indique lo contrario. Los adultos y niños mayores a 12 años deberán tomar 2 cápsulas de gel cada 6 horas. No tomar más de 8 cápsulas en un lapso menor a 24 horas.</p>
+            <p>En el caso de menores de 12 años, deberá usar dosis basadas en el peso. Pregunte a su médico en caso de duda.</p>
+            <p>En el caso de adultos mayores de 60 años se recomiendan dosis más bajas. Consulte a su médico para conocer la dosis adecuada.
+            No debe tomar una dosis mayor de lo indicado.</p><br>
+            <h6><b>Indicaciones Adicionales</b></h6>
+            <p>Consérvese a temperatura ambiente en un lugar fresco y seco. Revise la solapa para conocer la fecha de vencimiento y el número de lote.</p>
+          </div>
+        </div>
+      </div>
+    </article>
+  </section>
+  <!-- Sección advertencias -->
+  <section id="advertencias">
+   <article class="container">
+    <div class="row bg-white mt-5 mt-sm-4 p-5">
+      <div class="col-sm-12 col-lg-12 mb-3">
+       <h5> <img src="img/icon-warning.svg"> <b>Advertencias</b></h5>
+      </div>
+      <div class="col-sm-12 col-lg-6 pr-5">
+        <p>Llame a su médico de inmediato si tiene:</p>
+        <ul>
+         <li>Náuseas</li>
+         <li>Dolor en la parte superior del estómago</li>
+         <li>Picazón</li>
+         <li>Pérdida de apetito</li>
+         <li>Orina oscura</li>
+         <li>Urticaria</li>
+         <li>Respiración dificultosa</li>
+         <li>Hinchazón de la cara, labios, lengua o garganta</li>
+         <li>Heces de color arcilla o ictericia (coloración amarillenta de la piel o los ojos)</li>
+        </ul>
+        <p>Tomar ciertos productos juntos puede hacer que consuma demasiado acetaminofén, lo que puede provocar una sobredosis mortal.</p>
+        <p>En casos raros, el acetaminofeno puede causar una reacción cutánea grave. Deje de tomar <b>SEDALMEX</b> y llame a su médico de inmediato si tiene enrojecimiento de la piel o una erupción que se propaga y causa ampollas y descamación.</p>
+      </div> 
+      <div class="col-sm-12 col-lg-6">
+       <p>Pregúntele a su médico o farmacéutico si es seguro que tome este medicamento si tiene otras afecciones médicas, especialmente:</p>
+       <ul>
+         <li>Enfermedad del hígado o cirrosis</li>
+         <li>Ulcera estomacal</li>
+         <li>Picazón</li>
+         <li>Una historia de alcoholismo</li>
+         <li>Si toma más de 3 bebidas alcohólicas por día</li>
+       </ul><br>
+       <h5><b>Embarazo y Lactancia</b></h5>
+       <p><b>SEDALMEX</b> no debe tomarse durante el embarazo. Existe riesgo menor peso al nacer o de aborto espontáneo asociado con el consumo de cafeína. Consulte a su médico para cualquier aclaración.</p>
+      </div>
+    </div>
+   </article> 
+  </section>
+  <!-- Sección contacto -->
+  <section id="contacto">
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-sm-12 col-lg-12 py-3">
+          <img src="img/LogoSedalmexContacto.svg"> 
+          <h4>Contáctanos</h4>
+        </div>
+        <aside class="col-sm-12 col-lg-4 pr-0" >
+          <!-- <form action> -->          
+          <form action="https://formsubmit.co/isela.bl@gmail.com" method="POST">
+          <!-- <form action> -->
+          <div class="col-sm-12 col-lg-12 form-group row">
+            <input class="form-control" name="name" type="text" placeholder="Nombre*" required="required">
+          </div>
+          <div class="col-sm-12 col-lg-12 form-group row">
+            <input class="form-control" name="name" type="text" placeholder="Email*" required="required">       
+          </div>
+        </aside>
+        <aside class="col-sm-12 col-lg-8 pr-4">
+          <div class="form-group">
+           <textarea class="form-control contact-message" name="message" placeholder="Mensaje*" required="required" id="exampleFormControlTextarea1" rows="4"></textarea>
+          </div>
+        </aside>
+        <aside class="col-sm-12 col-lg-10">
+          <div class="col-sm-12 col-lg-12 form-group row text-dark">
+            <p><small>Al enviar esta información, estás de acuerdo que la información entregada estará sujeta a la Política de Privacidad de nuestro sitio web. Es posible que en el futuro te mandemos información sobre nuestros productos y servicios, así como noticias sobre salud que puedan ser de tu interés. Para dejar de recibir información adicional, puedes cancelar tu suscripción a nuestras listas en cualquier momento.</small> </p>
+          </div>
+        </aside>  
+        <aside class="col-sm-12 col-lg-2">
+          <div class="col-sm-12 col-lg-12 form-group row text-dark">
+            <input class="btn btn-lg bg-dark text-white" id="submit" name="submit" type="submit" value="Enviar >">
+            <!-- </hidden> -->
+            <input type="hidden" name="_subject" value="Nuevo Comentario">
+            <input type="hidden" name="_next" value="http://127.0.0.1:8887/gracias.html">
+          </form>
+            <!-- </hidden> -->
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+  <!-- Footer -->
+  <footer class="text-white bg-first-color">
     <div class="container">
       <section class="row pt-5 py-5 align-items-top">
-      <article class="col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8 pr-5 pt-3">
-      <img src="img/LogoSedalmexFooter.svg">
-        <p><b>2019 Sedalmex.</b> Todos los derechos reservados.<b> Sedalmex</b> no proveé recomendaciones medicas, diagnóstico o tratamiento.</p>
-        <p><a target="_blank" href="#" class="text-white"><b>Claúsulas</b></a> / 
-        <a target="_blank" href="#" class="text-white"><b>Políticas de privacidad</b></a></p>
-      </article>
-      <article class="footer-belmora-logo col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 p-3">
+        <article class="col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8 pr-4 pt-3">
+          <img src="img/LogoSedalmexFooter.svg">
+          <p><small><b>2019 Sedalmex.</b> Todos los derechos reservados.<b><br>Sedalmex</b> no proveé recomendaciones medicas, diagnóstico o tratamiento.</small></p>
+          <p><small><a target="_blank" href="#" class="text-white"><b>Claúsulas</b></a> / 
+          <a target="_blank" href="#" class="text-white"><b>Políticas de privacidad</b></a></small></p>
+        </article>
+        <article class="footer-belmora-logo col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 p-3">
           <img class="belmora-logo" src="img/Logo_belmora.png">
-        <p class=""><b>Sedalmex</b> es un producto de Belmora LLC.</p>
-      </article>
-  </section>
+          <p><small><b>Sedalmex</b> es un producto de Belmora LLC.</small></p>
+        </article>
+      </section>
     </div>
   </footer>
-
-
-
-
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <!-- Go to www.addthis.com/dashboard to customize your tools -->
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5f5f0830683fdc10"></script>
   </body>
 </html>
