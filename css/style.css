@@ -13,9 +13,15 @@
   --font-family: "Maven+Pro", sans-serif;
 }
 /* ********** Reset Styles ********** */
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: var(--font-family);
   font-color: var(--second-color);
+}
+a {
+  transition: all 0.8 ease-out;
 }
 /* ********** Bootstrap Styles ********** */
 .navbar-brand img {
@@ -24,60 +30,90 @@ body {
   margin-left: -1em;
 }
 .nav-link {
-  color: var(--first-alpha-color) !important;
+  color: var(--first-color) !important;
   transition: all 0.15s ease-out;
   font-weight: bold;
 }
 .nav-link:hover {
   padding-left: 0.25rem;
-  color: var(--first-color) !important;
+  color: var(--first-alpha-color) !important;
 }
-
 .dropdown-item {
   color: var(--first-alpha-color);
   font-weight: bold;
   transition: all 0.15s ease-ease;
 }
-
 .dropdown-item:hover {
   color: var(--third-color);
+  transition: all 0.5s ease-out;
 }
-
 .intro-header{
-	background-color: var(--second-color);
+  background-color: var(--second-color);
+}
+.btn-lg{
+  padding: 0.5rem 2rem;
+  font-size: 1em;
 }
 
+.form-control {
+  min-height: 50px;
+  border-radius: 0.4rem;
+}
+.contact-message {
+  min-height: 116px;
+}
 /* ********** My Styles ********** */
 .bg-first-color {
   background-color: var(--first-color);
 }
-
-/* ********** MediaQueries ********** */
-/* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {
-.footer-belmora-logo {
-	text-align: left;
+.bg-second-color {
+  background-color: var(--second-color);
 }
-
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
-	.footer-belmora-logo {
-		text-align: center;
-	}
+.bg-third-color {
+  background-color: var(--third-color);
 }
-
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-  .nav-link:hover {
-    background-color: transparent;
-     }
+#presentation {
+  background-size: cover;
+  background-position: right;
+  background-image: url("../img/Back_yellow.jpg");
+  font-family: Maven Pro;
 }
-
-/* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
+#ingredients {
+  background-position: left-bottom;
+  background-image: url("../img/back-ingredients.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  font-family: Maven Pro;
 }
-
-
+#dosis {
+  background-size: cover;
+  background-image: url("../img/back-dosis.jpg");
+  font-family: Maven Pro;
+  height: all;
+}
+#contacto {
+  font-family: Maven Pro;
+  background: rgb(238,210,0);
+  background: linear-gradient(
+  90deg, rgba(238,210,0,1) 0%, 
+  rgba(224,187,0,1) 16%, 
+  rgba(198,94,5,1) 100%);
+}
+.bg-dosis-recomendada {
+  background-size: cover;
+  background-image: url("../img/back-DosisRecomendada.png");
+}
+.modal-content {
+  font-family: Maven Pro;
+}
+.subtitle {
+  font-family: sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.btn-subir {
+}
 .font-italic{
     font-size:24px;
     font-family:Roboto;
@@ -85,5 +121,94 @@ body {
     padding-top:42px;
     margin-bottom: -.05em;
     color: var(--first-color);
+}
+/* ********** MediaQueries ********** */
+/* Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+#advertencias {
+  font-family: Maven Pro;
+  background-color: white;
+  padding-top: 1rem;
+  }
+#paquete {
+  position: absolute;
+  max-width: 400px;
+  max-height: 400px;
+  }
+}
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+.footer-belmora-logo {
+  text-align: left;
+  }
+#advertencias {
+  font-family: Maven Pro;
+  background-color: var(--second-color);
+  padding-top: 1rem;
+} 
+.caja {
+  position: absolute;
+  background-color: red;
+}
+#paquete {
+  position: absolute;
+  max-width: 400px;
+  max-height: 400px;
+  top: 20px;
+  left: 60px;
+}
+#text-dosis {
+  padding-top: 300px;
+}
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+.footer-belmora-logo {
+  text-align: center;
+}
+#advertencias {
+  font-family: Maven Pro;
+  background-color: var(--second-color);
+  padding-top: 1rem;
+  }
+#text-dosis {
+  padding-top: 30px;
+  }
+.caja {
+  position: absolute;
+  }
+#paquete {
+  position: absolute;
+  max-width: 450px;
+  max-height: 450px;
+  top: 80px;
+  left: 10px;
+  } 
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+.nav-link:hover {
+  background-color: transparent;
+  } 
+#advertencias {
+  font-family: Maven Pro;
+  background-color: var(--second-color);
+  padding-top: 1rem;
+  }
+.caja {
+  position: absolute;
+  }
+#paquete {
+  position: absolute;
+  max-width: 600px;
+  max-height: 600px;
+  top: 20px;
+  left: 0px;
+  }
+#text-dosis {
+  padding-top: 30px;
+  } 
+}
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
 }
 
